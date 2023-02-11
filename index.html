@@ -39,7 +39,7 @@
             width: 400px !important;
             border-radius: 20px;
         }
-        #button{
+        .button{
             border-radius:5px;
         }
     </style>
@@ -48,18 +48,24 @@
     
     <div  id="container">
         <nav  id="links" >
-            <a  href="#">Image Search</a>
-            <a  href="#">Advanced Search</a>
+            <a  href="imagesearch.html?q="mariana">Image Search</a>
+            <a  href="advancedsearch.html">Advanced Search</a>
         </nav>
         <div id="image">
             <img src="google.png" alt="Google" width="200">
         </div>
         
-        <form class="d-flex justify-content-center" role="search" action="https://www.google.com/search">
+        <form class="d-flex justify-content-center " role="search" action="https://www.google.com/search">
             <input class="p-2" id="input" type="text" name="q">
-            <input class="p-2" id="button" type="submit" value="Google Search">
+            <div clas="d-flex flex-row mb-3">
+                <input class="p-2" class="button" type="submit" value="Google Search">
+                <input class="p-2" class="button" type="submit" value="I'm feeling lucky"  form="lucky">
+            </div>
+            
         </form>
-   
+        <form action="https://google.com/doodles" id="lucky">
+            
+        </form>
     </div>
 </body>
 </html>
