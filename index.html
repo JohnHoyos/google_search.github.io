@@ -35,13 +35,49 @@
         form > input{
             margin: 5px;
         }
-        #input{
-            width: 400px !important;
-            border-radius: 20px;
-        }
+    
         .button{
             border-radius:5px;
         }
+        .buttons{
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .buttons:hover{
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124
+        }
+        #input{
+            display: flex;
+            height: 44px;
+            background: #fff;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            margin: 0 auto;
+            width: 638px;            
+            max-width: 584px;
+            padding-inline-start: 20px;
+            
+        }
+        #input:hover{
+            box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+            border-color: rgba(223,225,229,0);
+        }
+       
     </style>
 </head>
 <body>
@@ -52,14 +88,14 @@
             <a  href="advancedsearch.html">Advanced Search</a>
         </nav>
         <div id="image">
-            <img src="google.png" alt="Google" width="200">
+            <img src="google.png" alt="Google" width="272">
         </div>
         
         <form class="d-flex justify-content-center " role="search" action="https://www.google.com/search">
-            <input class="p-2" id="input" type="text" name="q">
+            <input id="input" autofocus  type="text" autocomplete="off"name="q">
             <div clas="d-flex flex-row mb-3">
-                <input class="p-2" class="button" type="submit" value="Google Search">
-                <input class="p-2" class="button" type="submit" value="I'm feeling lucky"  form="lucky">
+                <input class="buttons" class="button" type="submit" value="Google Search">
+                <input class="buttons" class="button" type="submit" value="I'm feeling lucky"  form="lucky">
             </div>
             
         </form>
